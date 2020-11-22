@@ -1,6 +1,6 @@
 {
   "name": "com.hairibar.hfsm",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "Hairibar.HFSM",
   "description": "A Hierarchical Finite State Machine.",
   "unity": "2019.3",
