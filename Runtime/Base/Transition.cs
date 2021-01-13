@@ -11,7 +11,7 @@ namespace Hairibar.HFSM
 
         public virtual bool ShouldTransition => true;
 
-        public StateMachine<TMachine> fsm;
+        [System.NonSerialized] public StateMachine<TMachine> fsm;
         public virtual TMachine Owner
         {
             get => _machineTypeOwner;

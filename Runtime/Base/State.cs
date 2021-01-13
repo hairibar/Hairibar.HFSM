@@ -8,9 +8,9 @@ namespace Hairibar.HFSM
         public abstract bool HasExitRules { get; }
         public virtual bool CanExit => true;
 
-        public string name;
+        [System.NonSerialized] public string name;
+        [System.NonSerialized] public StateMachine<TMachine> fsm;
 
-        public StateMachine<TMachine> fsm;
         public virtual TMachine Owner
         {
             get => _machineTypeOwner;
